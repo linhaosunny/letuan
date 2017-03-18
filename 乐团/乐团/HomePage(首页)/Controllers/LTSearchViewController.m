@@ -10,6 +10,7 @@
 #import "UIBarButtonItem+Extension.h"
 #import "UIView+Extension.h"
 #import "UIImage+ResizeImage.h"
+#import "LTSearchBar.h"
 #import "CommonDefine.h"
 #import "Masonry.h"
 
@@ -33,13 +34,19 @@
     titleView.size = CGSizeMake(260, 30);
     self.navigationItem.titleView = titleView;
     
-    UISearchBar *searchBar = [[UISearchBar alloc] init];
-    searchBar.backgroundImage = [UIImage imageNamed:@"bg_login_textfield_hl"];
+//    UISearchBar *searchBar = [[UISearchBar alloc] init];
+//    searchBar.backgroundImage = [UIImage imageNamed:@"bg_login_textfield_hl"];
+//    [searchBar setPlaceholder:@"请输入关键词"];
+//    [searchBar setDelegate:self];
+//    [searchBar setTintColor:LTColor(38, 158, 90)];
+//    [titleView addSubview:searchBar];
+    LTSearchBar *searchBar = [[LTSearchBar alloc] init];
+    [searchBar searchBarCustomerTextFieldWithBorderColor:LTColor(38, 158, 90) andTextFieldStyle:LTSearchTextFieldCustomer];
+    [searchBar searchBarTextFieldCursorWithColor:LTColor(38, 158, 90)];
     [searchBar setPlaceholder:@"请输入关键词"];
     [searchBar setDelegate:self];
-    [searchBar setTintColor:LTColor(38, 158, 90)];
-    [titleView addSubview:searchBar];
 
+    [titleView addSubview:searchBar];
     
     [searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(titleView).insets(UIEdgeInsetsMake(0, 10, 0, 10));

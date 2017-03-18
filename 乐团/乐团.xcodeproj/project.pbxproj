@@ -125,6 +125,7 @@
 		850BEDD91E7D11D9000544E7 /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 850BED621E7D11D9000544E7 /* cityGroups.plist */; };
 		850BEDDA1E7D11D9000544E7 /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 850BED631E7D11D9000544E7 /* sorts.plist */; };
 		850BEDDB1E7D11D9000544E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 850BED651E7D11D9000544E7 /* ViewController.m */; };
+		850BEDE81E7D82B6000544E7 /* LTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 850BEDE71E7D82B6000544E7 /* LTSearchBar.m */; };
 		85D98AE01E61C6DE00B28A0C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D98ADF1E61C6DE00B28A0C /* libsqlite3.tbd */; };
 		85FB7CB21E682000004BC759 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FB7CB11E682000004BC759 /* libc++.tbd */; };
 		85FB7CB41E68200B004BC759 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FB7CB31E68200B004BC759 /* libz.tbd */; };
@@ -389,6 +390,8 @@
 		850BED631E7D11D9000544E7 /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
 		850BED641E7D11D9000544E7 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		850BED651E7D11D9000544E7 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		850BEDE61E7D82B6000544E7 /* LTSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSearchBar.h; sourceTree = "<group>"; };
+		850BEDE71E7D82B6000544E7 /* LTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTSearchBar.m; sourceTree = "<group>"; };
 		858F6B411E5703EF008710BD /* 乐团.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "乐团.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858F6B5A1E5703EF008710BD /* 乐团Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "乐团Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858F6B651E5703EF008710BD /* 乐团UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "乐团UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -556,6 +559,8 @@
 				850BEC8C1E7D11D9000544E7 /* LTDealsViewController.m */,
 				850BEC8D1E7D11D9000544E7 /* LTNavigationController.h */,
 				850BEC8E1E7D11D9000544E7 /* LTNavigationController.m */,
+				850BEDE61E7D82B6000544E7 /* LTSearchBar.h */,
+				850BEDE71E7D82B6000544E7 /* LTSearchBar.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -979,7 +984,7 @@
 		858F6B391E5703EF008710BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = MT;
+				CLASSPREFIX = LT;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "李莎鑫";
 				TargetAttributes = {
@@ -1139,6 +1144,7 @@
 				850BED761E7D11D9000544E7 /* UIImage+ResizeImage.m in Sources */,
 				850BEDB31E7D11D9000544E7 /* UIImageView+WebCache.m in Sources */,
 				850BED831E7D11D9000544E7 /* LTHttpTool.m in Sources */,
+				850BEDE81E7D82B6000544E7 /* LTSearchBar.m in Sources */,
 				850BED881E7D11D9000544E7 /* MASViewAttribute.m in Sources */,
 				850BEDAF1E7D11D9000544E7 /* UIImage+GIF.m in Sources */,
 				850BED871E7D11D9000544E7 /* MASLayoutConstraint.m in Sources */,
