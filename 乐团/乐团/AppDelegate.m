@@ -1,14 +1,14 @@
 //
 //  AppDelegate.m
-//  美团
+//  乐团
 //
 //  Created by 李莎鑫 on 2017/2/17.
 //  Copyright © 2017年 李莎鑫. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MTNavigationController.h"
-#import "MTHomeViewController.h"
+#import "LTNavigationController.h"
+#import "LTHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +23,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    self.window.rootViewController = [[MTNavigationController alloc] initWithRootViewController:[[MTHomeViewController alloc] init]];
+    self.window.rootViewController = [[LTNavigationController alloc] initWithRootViewController:[[LTHomeViewController alloc] init]];
     
     [self.window makeKeyAndVisible];
     

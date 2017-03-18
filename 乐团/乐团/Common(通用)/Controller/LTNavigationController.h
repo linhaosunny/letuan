@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  LTNavigationController.h
 //  乐团
 //
 //  Created by 李莎鑫 on 2017/2/17.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface LTNavigationController : UINavigationController
 
 @end
-

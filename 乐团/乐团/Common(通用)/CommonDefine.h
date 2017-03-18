@@ -1,6 +1,6 @@
 //
 //  CommonDefine.h
-//  美团
+//  乐团
 //
 //  Created by 李莎鑫 on 2017/2/17.
 //  Copyright © 2017年 李莎鑫. All rights reserved.
@@ -21,42 +21,42 @@
 #endif
 
 #pragma mark - 颜色\边距
-#define MTColor(r,g,b)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-#define MTGlobalBlackgroudColor MTColor(230,230,230)
+#define LTColor(r,g,b)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define LTGlobalBlackgroudColor LTColor(230,230,230)
 
-#define MTColorAlpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/1.0]
+#define LTColorAlpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/1.0]
 
-#define MTNavigationRightBarButtonItemWidth  40
+#define LTNavigationRightBarButtonItemWidth  40
 
 #pragma mark - 通知
-#define MTCollectChangeNotification @"MTCollectChangeNotification"
-#define MTCollectSelect @"isCollected"
-#define MTCollectValue  @"CollectedDeal"
+#define LTCollectChangeNotification @"LTCollectChangeNotification"
+#define LTCollectSelect @"isCollected"
+#define LTCollectValue  @"CollectedDeal"
 
-#define MTNotificationExit  @"NotificationExit"
-#define MTNotificationInit  @"NotificationInit"
+#define LTNotificationExit  @"NotificationExit"
+#define LTNotificationInit  @"NotificationInit"
 // > 改变分类通知
-#define MTCagtegoryChangedNotification @"MTCagtegoryChangedNotification"
-#define MTIconCategorySelected  @"IconCategorySelected"
-#define MTIconHLCategorySelected  @"IconHLCategorySelected"
-#define MTMainCagtegorySelected @"MainCagtegorySelected"
-#define MTSubCagtegorySelected @"SubCagtegorySelected"
+#define LTCagtegoryChangedNotification @"LTCagtegoryChangedNotification"
+#define LTIconCategorySelected  @"IconCategorySelected"
+#define LTIconHLCategorySelected  @"IconHLCategorySelected"
+#define LTMainCagtegorySelected @"MainCagtegorySelected"
+#define LTSubCagtegorySelected @"SubCagtegorySelected"
 
 
 
 // > 改变城市通知
-#define MTCityChangedNotification @"MTCityChangedNotification"
-#define MTSelectedCity @"SelectedCity"
-#define MTSelectedRegion @"SelectedRegion"
-#define MTSelectedSubRegion @"SelectedSubRegion"
+#define LTCityChangedNotification @"LTCityChangedNotification"
+#define LTSelectedCity @"SelectedCity"
+#define LTSelectedRegion @"SelectedRegion"
+#define LTSelectedSubRegion @"SelectedSubRegion"
 
 
 // > 排序通知
-#define MTSortChangedNotification @"MTSortChangedNotification"
-#define MTSortSelected @"SortSelected"
-#define MTSortVaule @"SortVaule"
+#define LTSortChangedNotification @"LTSortChangedNotification"
+#define LTSortSelected @"SortSelected"
+#define LTSortVaule @"SortVaule"
 
 #pragma mark - 数据库
-#define MTDataBaseDealPerPageNum  6
+#define LTDataBaseDealPerPageNum  6
 
 #endif /* CommonDefine_h */
