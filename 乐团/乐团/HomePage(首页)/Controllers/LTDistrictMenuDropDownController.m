@@ -243,12 +243,16 @@
     DebugLog(@"点击右边空白区域退出");
     
     LTCitiesModel *city = [self.city lastObject];
+   
+    // > 解决下拉菜单为选中城市点击右边crash的问题
+    if(city == nil) return;
     
     if(self.leftSelectedCell){
         LTRegionModel *model = city.regions[[self.leftView indexPathForCell:self.leftSelectedCell].row] ;
         // > 发送通知
         [[NSNotificationCenter defaultCenter] postNotificationName:LTCityChangedNotification object:nil userInfo:@{ LTSelectedCity:city.name,LTSelectedRegion:model.name,LTSelectedSubRegion:((LTRegionModel *)city.regions[0]).name,LTNotificationExit:@"YES"}];
     }else{
+        
         // > 发送通知
         [[NSNotificationCenter defaultCenter] postNotificationName:LTCityChangedNotification object:nil userInfo:@{ LTSelectedCity:city.name,LTSelectedRegion:@"全部地区",LTSelectedSubRegion:@"全部",LTNotificationExit:@"YES"}];
     }
