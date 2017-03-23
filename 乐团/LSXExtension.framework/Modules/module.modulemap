@@ -1,0 +1,6 @@
+framework module LSXExtension {
+  umbrella header "LSXExtension.h"
+
+  export *
+  module * { export * }
+}

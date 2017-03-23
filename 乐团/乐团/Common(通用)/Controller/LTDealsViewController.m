@@ -18,6 +18,7 @@
 #import "UIView+Extension.h"
 #import "ProgressHUD.h"
 #import "Masonry.h"
+#import "LSXExtension.h"
 
 @interface LTDealsViewController ()
 @property (nonatomic, weak) UIImageView *noDealsView;
@@ -188,6 +189,9 @@ static NSString * const reuseIdentifier = @"dealCell";
         if(result[@"deals"]){
             NSArray *deals = [LTDealModel objectArrayWithKeyValuesArray:result[@"deals"]];
             
+            // > 测试LSXExtension
+            NSArray *data = [ExchangeToModel model:[LTDealModel class] withDictonaryArray:result[@"deals"]];
+            DebugLog(@"%@",data);
             // > 计算总页码
             weakSelf.request.total_num = [result[@"total_count"] intValue];
             if(result[@"total_count"]&&weakSelf.request.total_num){

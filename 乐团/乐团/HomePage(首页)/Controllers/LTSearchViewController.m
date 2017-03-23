@@ -52,6 +52,9 @@
         make.edges.equalTo(titleView).insets(UIEdgeInsetsMake(0, 10, 0, 10));
     }];
     
+    // > 透明导航栏
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
 }
 
