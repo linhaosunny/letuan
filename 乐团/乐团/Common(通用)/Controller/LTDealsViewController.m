@@ -29,6 +29,7 @@
 
 @end
 
+#define CellWidth ([UIScreen mainScreen].bounds.size.width - 20)
 @implementation LTDealsViewController
 
 static NSString * const reuseIdentifier = @"dealCell";
@@ -54,7 +55,7 @@ static NSString * const reuseIdentifier = @"dealCell";
 - (instancetype)init{
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     
-    layout.itemSize = CGSizeMake(300, 300);
+    layout.itemSize = CGSizeMake(CellWidth, CellWidth);
     // > 调整竖直方向的间距
     layout.minimumLineSpacing = 20;
     
